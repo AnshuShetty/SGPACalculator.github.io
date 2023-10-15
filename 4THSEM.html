@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th sem</title>
+    <style>
+        *{
+            padding:0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            /* height: 100vh; */
+            width: auto;
+            background-color: #111114;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            place-items: center;
+            place-content: center;
+            height: 100%;
+        }
+        .head{
+            font-size: 50px;
+            color: #faa916;
+            padding: 10px;
+        }
+        .container .content{
+            display: flex;
+            flex-direction: column;
+            column-count: 3;
+            margin: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .container .content label{
+            color: white;
+            width: 100%;
+            font-size: 20px;
+        }
+        .container .content input{
+            height: 40px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border: 3px solid #ff6f00;
+            outline: none;
+            width: 100%;
+        }
+        .container .btn,button {
+        
+            width: 50%;
+            height: 30px;
+            color: white;
+            background-color: #417B5A;
+            outline: none;
+            border: none; border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            4th Semester
+        </div>
+        <div class="content">
+            <label for="sem">21MAT41</label>
+            <input type="number" class="box" id="mat" placeholder="MATHS" class="box"><br>
+            <label for="sem">21CS42</label>
+            <input type="number" class="box" id="daa" placeholder="DAA" class="box"><br>
+            <label for="sem">21CS43</label><br>
+            <input type="number" class="box" id="mes" placeholder="M&ES" class="box"><br>
+            <label for="sem">21CS44</label><br>
+            <input type="number" class="box" id="os" placeholder="OS" class="box"><br>
+            <label for="sem">21BE45</label><br>
+            <input type="number" class="box" id="bio" placeholder="BIO" class="box"><br>
+            <label for="sem">21KSK47</label><br>
+            <input type="number" class="box" id="kannada" placeholder="kannada" class="box"><br>
+            <label for="sem">21UH49</label><br>
+            <input type="number" class="box" id="uhv" placeholder="UHV" class="box"><br>
+            <label for="sem">21CSL46</label><br>
+            <input type="number" class="box" id="web" placeholder="web lab" class="box"><br>
+            <label for="sem">21CSL48</label><br>
+            <input type="number" class="box" id="python" placeholder="python" class="box"><br>
+            
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="sgpacalc()">Calculate</button>
+        </div>
+    </div>
+    <script src="./sgpa.js"></script>
+</body>
+</html>

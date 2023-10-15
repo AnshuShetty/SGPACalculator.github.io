@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <style>
+        *{
+            padding:0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: auto;
+            background-color: #111114;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+           place-items: center;
+        }
+        .head{
+            font-size: 50px;
+            color: #faa916;
+            padding: 10px;
+        }
+        .container .content{
+            margin: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .container .content label{
+            color: white;
+            width: 100%;
+            font-size: 20px;
+        }
+        .container .content input{
+            height: 40px;
+            text-align: center;
+            border-radius: 10px;
+            border: 3px solid #ff6f00;
+            outline: none;
+            width: 100%;
+        }
+        .container .btn,button {
+            width: 50%;
+            height: 30px;
+            color: white;
+            background-color: #417B5A;
+            outline: none;
+            border: none; border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+    </style>
+</head>
+<body>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,96L34.3,106.7C68.6,117,137,139,206,138.7C274.3,139,343,117,411,117.3C480,117,549,139,617,154.7C685.7,171,754,181,823,202.7C891.4,224,960,256,1029,272C1097.1,288,1166,288,1234,272C1302.9,256,1371,224,1406,208L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+  
+    <div class="container">
+        <div class="head">
+            SGPA CALCULATOR
+        </div>
+        <div class="content">
+            <label for="sem">Enter your semester</label><br>
+            <input type="number" class="box" id="box" placeholder="Enter sem 4 for now">
+        </div>
+        <div class="btn">
+            <button type="submit" onclick="validatesem()">Submit</button>
+        </div>
+    </div>
+    <script src="./sgpa.js"></script>
+</body>
+</html>
