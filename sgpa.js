@@ -2,7 +2,8 @@ function validatesem(){
     const value = document.getElementById('box').value;
     if(value === '4'){
         console.log('1');
-        window.open("4THSEM.html");
+        // window.open("");
+        window.location.href = "sgpa/4THSEM.html";
     }
     
 }
@@ -65,4 +66,4 @@ function cr(a){
         return 0;
     }
 }
-document.querySelector(".box").reset();
+
