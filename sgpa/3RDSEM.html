@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3RD sem</title>
+    <style>
+        *{
+            padding:0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            /* height: 100vh; */
+            width: auto;
+            background-color: #111114;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            place-items: center;
+            place-content: center;
+            height: 100%;
+        }
+        .head{
+            font-size: 50px;
+            color: #faa916;
+            padding: 10px;
+            text-align: center;
+        }
+        .container .content .row{
+            display: flex;
+           justify-content: center;
+           
+            margin: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .container .content .row .col{
+            margin: 6px;
+        }
+        .container .content label{
+            color: white;
+            width: 100%;
+            font-size: 20px;
+        }
+        .container .content .row input{
+            height: 40px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border: 3px solid #ff6f00;
+            outline: none;
+            width: 100%;
+        }
+        .container .row  .col button {
+        
+            width: 100%;
+            height: 50px;
+            color: rgb(22, 22, 22);
+            background:linear-gradient(yellow, orange);
+            outline: none;
+            border: none; border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        @media screen and (max-width: 600px) {
+            .container .content .row{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-wrap: wrap;
+            margin: 10px;
+            /* width: 100%; */
+            text-align: center;
+        }
+        .container .content .row .col{
+            margin: 2px;
+        }
+        .head{
+            font-size: 30px;
+            color: #faa916;
+            padding: 10px;
+            text-align: center;
+        }
+}
+
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <div class="head">
+                        3rd Semester
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21MAT31</label>
+                    <input type="number"        class="box" id="math"   placeholder="MATHS"      class="box">
+                </div>
+                <div class="col">
+                    <label for="sem">21CS32</label>
+                    <input type="number"        class="box" id="dsa"    placeholder="DSA" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21CS33</label>
+                    <input type="number"        class="box" id="ade"    placeholder="ADE"       class="box">
+                </div>
+                <div class="col">
+                    <label for="sem">21CS34</label>
+                    <input type="number"        class="box" id="co"     placeholder="CO" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21CSL35</label>
+            <input type="number" class="box" id="oop" placeholder="OOP" class="box"><br>
+                </div>
+                <div class="col">
+                    <label for="sem">21UH36</label>
+                    <input type="number" class="box" id="uhv" placeholder="UHV" class="box"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21CIP37</label>
+                    <input type="number" class="box" id="cip" placeholder="CIP" class="box"><br>
+                </div>
+                <div class="col">
+                    <label for="sem">21CSL381</label>
+                    <input type="number" class="box" id="aec" placeholder="AEC" class="box"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="btn">
+                        <button type="submit" onclick="calcsgpa()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./sgpa.js"></script>
+</body>
+</html>

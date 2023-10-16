@@ -45,9 +45,9 @@
         }
         .container .btn,button {
             width: 50%;
-            height: 30px;
-            color: white;
-            background-color: #417B5A;
+            height: 40px;
+            color: rgb(0, 0, 0);
+            background:linear-gradient(yellow, orange);
             outline: none;
             border: none; border-radius: 10px;
             text-align: center;
@@ -73,6 +73,7 @@
             flex-direction: row;
             
         }
+       
     </style>
 </head>
 <body>
@@ -84,7 +85,7 @@
         </div>
         <div class="content">
             <label for="sem">Enter your semester</label><br>
-            <input type="number" class="box" id="box" placeholder="Enter sem 4 for now">
+            <input type="number" class="box" id="box" required placeholder="Semester">
         </div>
         <div class="btn">
             <button type="submit" ><a onclick="validatesem()">Calculate</a>
