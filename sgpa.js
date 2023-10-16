@@ -3,11 +3,11 @@ function validatesem(){
     if(value === '4'){
         console.log('1');
         // window.open("4THSEM.html");
-        window.location.href = "4THSEM.html";
+        window.location.href = "sgpa/4THSEM.html";
     }
     else if(value === '3'){
         console.log('0');
-        window.location.href = "3RDSEM.html";
+        window.location.href = "sgpa/3RDSEM.html";
     }
     else{
         alert("This is only for 3rd and 4th sem!");
