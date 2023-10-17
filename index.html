@@ -24,6 +24,7 @@
             font-size: 50px;
             color: #faa916;
             padding: 10px;
+            text-align: center;
         }
         .container .content{
             margin: 10px;
@@ -73,7 +74,28 @@
             flex-direction: row;
             
         }
-       
+        @media screen and (max-width: 600px){
+            .head{
+            font-size: 30px;
+            color: #faa916;
+            padding: 10px;
+            text-align: center;
+        }
+        .container .content input{
+            height: 40px;
+            text-align: center;
+            border-radius: 10px;
+            border: 3px solid #ff6f00;
+            outline: none;
+            width: 80%;
+        }
+        .container {
+            display: grid;
+            justify-content: center;
+           place-items: center;
+           margin-top: 20%;   
+        }
+        }
     </style>
 </head>
 <body>
