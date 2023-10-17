@@ -48,6 +48,9 @@ function sgpacalc(){
     total = ((matcr*3)+(daacr*4)+(mescr*4)+(oscr*3)+(biocr*2)+(kancr*1)+(uhvcr*1)+(webcr*2)+(pycr*2));
     var sgpa = total/total_cr;
     alert("SGPA: "+sgpa.toFixed(2));
+    const answer = document.querySelector('#result');
+    answer.innerHTML="SGPA: "+sgpa.toFixed(2);
+    answer.style.backgroundColor = 'yellow';
 } 
 function cr(a){
     if(a>=90 && a<=100){
@@ -109,4 +112,7 @@ function calcsgpa(){
     third_total = ((mathcr*3)+(dsacr*4)+(adecr*4)+(cocr*3)+(oopcr*2)+(cipcr*1)+(uhvcr*1)+(aeccr*2));
     var third_sgpa = third_total/third_total_cr*10;
     alert("SGPA: "+third_sgpa.toFixed(2));
+    const ans = document.querySelector('#res');
+    ans.innerHTML="SGPA: "+third_sgpa.toFixed(2);
+    ans.style.backgroundColor = 'yellow';
 } 
