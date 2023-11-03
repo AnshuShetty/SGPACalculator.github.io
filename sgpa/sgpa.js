@@ -23,6 +23,7 @@ function sgpacalc(){
     const kan = document.querySelector('#kannada').value;
     const weblab = document.querySelector('#web').value;
     const python = document.querySelector('#python').value;
+    const internship = document.querySelector('#intern').value;
 
     const mat_cr = 3;
     const daa_cr = 4;
@@ -31,9 +32,10 @@ function sgpacalc(){
     const bio_cr = 2;
     const kan_cr = 1;
     const uhv_cr = 1;
-    const web_cr = 2;
-    const py_cr = 2;
-    total_cr = ((mat_cr)+(daa_cr)+(mes_cr)+(os_cr)+(bio_cr)+(kan_cr)+(uhv_cr)+(web_cr)+(py_cr));
+    const web_cr = 1;
+    const py_cr = 1;
+    const inter_cr = 1;
+    total_cr = ((mat_cr)+(daa_cr)+(mes_cr)+(os_cr)+(bio_cr)+(kan_cr)+(uhv_cr)+(web_cr)+(py_cr)+(inter_cr));
 
     const matcr = cr(mat);
     const daacr = cr(daa);
@@ -44,6 +46,7 @@ function sgpacalc(){
     const uhvcr = cr(uhv);
     const webcr = cr(weblab);
     const pycr = cr(python);
+    const Intercr = cr(internship);
     console.log(matcr,pycr, daacr);
     total = ((matcr*3)+(daacr*4)+(mescr*4)+(oscr*3)+(biocr*2)+(kancr*1)+(uhvcr*1)+(webcr*2)+(pycr*2));
     var sgpa = total/total_cr;
@@ -112,7 +115,7 @@ function calcsgpa(){
     third_total = ((mathcr*3)+(dsacr*4)+(adecr*4)+(cocr*3)+(oopcr*2)+(cipcr*1)+(uhvcr*1)+(aeccr*2));
     var third_sgpa = third_total/third_total_cr*10;
     alert("SGPA: "+third_sgpa.toFixed(2));
-    const ans = document.querySelector('#res');
+    const ans = document.querySelector('#result');
     ans.innerHTML="SGPA: "+third_sgpa.toFixed(2);
     ans.style.backgroundColor = 'yellow';
 } 
