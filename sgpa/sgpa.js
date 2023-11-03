@@ -34,7 +34,7 @@ function sgpacalc(){
     const uhv_cr = 1;
     const web_cr = 1;
     const py_cr = 1;
-    const inter_cr = 1;
+    const inter_cr = 2;
     total_cr = ((mat_cr)+(daa_cr)+(mes_cr)+(os_cr)+(bio_cr)+(kan_cr)+(uhv_cr)+(web_cr)+(py_cr)+(inter_cr));
 
     const matcr = cr(mat);
