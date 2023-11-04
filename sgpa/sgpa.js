@@ -48,7 +48,7 @@ function sgpacalc(){
     const pycr = cr(python);
     const Intercr = cr(internship);
     console.log(matcr,pycr, daacr);
-    total = ((matcr*3)+(daacr*4)+(mescr*4)+(oscr*3)+(biocr*2)+(kancr*1)+(uhvcr*1)+(webcr*2)+(pycr*2));
+    total = ((matcr*3)+(daacr*4)+(mescr*4)+(oscr*3)+(biocr*2)+(kancr*1)+(uhvcr*1)+(webcr*1)+(pycr*1)+(Intercr*2));
     var sgpa = total/total_cr;
     alert("SGPA: "+sgpa.toFixed(2));
     const answer = document.querySelector('#result');
