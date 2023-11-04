@@ -96,10 +96,10 @@ function calcsgpa(){
     const dsa_cr = 4;
     const ade_cr = 4;
     const co_cr = 3;
-    const oop_cr = 2;
+    const oop_cr = 1;
     const uhv_cr = 1;
     const cip_cr = 1;
-    const aec_cr = 2;
+    const aec_cr = 1;
 
     third_total_cr = ((math_cr*10)+(dsa_cr*10)+(ade_cr*10)+(co_cr*10)+(oop_cr*10)+(cip_cr*10)+(uhv_cr*10)+(aec_cr*10));
 
@@ -112,7 +112,7 @@ function calcsgpa(){
     const uhvcr = cr(uhv);
     const aeccr = cr(aec);
     console.log(mathcr, dsacr);
-    third_total = ((mathcr*3)+(dsacr*4)+(adecr*4)+(cocr*3)+(oopcr*2)+(cipcr*1)+(uhvcr*1)+(aeccr*2));
+    third_total = ((mathcr*3)+(dsacr*4)+(adecr*4)+(cocr*3)+(oopcr*1)+(cipcr*1)+(uhvcr*1)+(aeccr*1));
     var third_sgpa = third_total/third_total_cr*10;
     alert("SGPA: "+third_sgpa.toFixed(2));
     const ans = document.querySelector('#result');
