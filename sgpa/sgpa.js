@@ -115,7 +115,7 @@ function calcsgpa(){
     third_total = ((mathcr*3)+(dsacr*4)+(adecr*4)+(cocr*3)+(oopcr*1)+(cipcr*1)+(uhvcr*1)+(aeccr*1));
     var third_sgpa = third_total/third_total_cr*10;
     alert("SGPA: "+third_sgpa.toFixed(2));
-    const ans = document.querySelector('#result');
+    const ans = document.querySelector('#res');
     ans.innerHTML="SGPA: "+third_sgpa.toFixed(2);
     ans.style.backgroundColor = 'yellow';
 } 
