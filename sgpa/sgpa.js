@@ -9,8 +9,12 @@ function validatesem(){
         console.log('0');
         window.location.href = "sgpa/3RDSEM.html";
     }
+    else if(value === '5'){
+        console.log('0');
+        window.location.href = "sgpa/5thsem.html";
+    }
     else{
-        alert("This is only for 3rd and 4th sem!");
+        alert("This is only for 3rd 4th and 5th sem!");
     }
 }
 function sgpacalc(){
@@ -55,6 +59,50 @@ function sgpacalc(){
     answer.innerHTML="SGPA: "+sgpa.toFixed(2);
     answer.style.backgroundColor = 'yellow';
 } 
+
+function fifthsem(){
+    const atc = document.querySelector('#atc').value;
+    const cn = document.querySelector('#cn').value;
+    const dbms = document.querySelector('#dbms').value;
+    const pai = document.querySelector('#pai').value;
+    const rmi = document.querySelector('#rmi').value;
+    const evs = document.querySelector('#evs').value;
+    const dbmsl = document.querySelector('#dbmsl').value;
+    const ajs = document.querySelector('#ajs').value;
+    // const python = document.querySelector('#python').value;
+    const internship = document.querySelector('#intern').value;
+
+    const atc_cr = 3;
+    const cn_cr = 4;
+    const dbms_cr = 3;
+    const pai_cr = 3;
+    const rmi_cr = 2;
+    const evs_cr = 1;
+    const dbmsl_cr = 1;
+    const ajs_cr = 1;
+    // const py_cr = 1;
+    const inter_cr = 2;
+    total_cr = ((atc_cr)+(cn_cr)+(dbms_cr)+(pai_cr)+(rmi_cr)+(evs_cr)+(dbmsl_cr)+(ajs_cr)+(inter_cr));
+
+    const atccr = cr(atc);
+    const cncr = cr(cn);
+    const dbmscr = cr(dbms);
+    const paicr = cr(pai);
+    const rmicr = cr(rmi);
+    const evscr = cr(evs);
+    const dbmslcr = cr(dbmsl);
+    const ajscr = cr(ajs);
+    // const pycr = cr(python);
+    const Intercr = cr(internship);
+    // console.log(matcr,pycr, daacr);
+    total = ((atccr*3)+(cncr*4)+(dbmscr*3)+(paicr*3)+(rmicr*2)+(evscr*1)+(dbmslcr*1)+(ajscr*1)+(Intercr*2));
+    var sgpa = total/total_cr;
+    alert("SGPA: "+sgpa.toFixed(2));
+    const answer = document.querySelector('#result');
+    answer.innerHTML="SGPA: "+sgpa.toFixed(2);
+    answer.style.backgroundColor = 'yellow';
+} 
+
 function cr(a){
     if(a>=90 && a<=100){
         return 10;
