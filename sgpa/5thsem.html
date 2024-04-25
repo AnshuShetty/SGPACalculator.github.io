@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th sem</title>
+    <link rel="shortcut icon" href="SGPA CALC LOGO.png">
+    <style>
+        *{
+            padding:0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            /* height: 100vh; */
+            width: auto;
+            background-color: #111114;
+        }
+        .container{
+            display: grid;
+            justify-content: center;
+            place-items: center;
+            place-content: center;
+            height: 100%;
+        }
+        .head{
+            font-size: 50px;
+            color: #faa916;
+            padding: 10px;
+            text-align: center;
+        }
+        .container .content .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .container .content label{
+            color: white;
+            width: 100%;
+            font-size: 20px;
+        }
+        .container .content .row .col{
+            margin: 6px;
+        }
+        .container .content .row input{
+            height: 40px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            border: 3px solid #ff6f00;
+            outline: none;
+            width: 100%;
+        }
+        .container .row  .col button {
+        width: 100%;
+        height: 50px;
+        color: rgb(22, 22, 22);
+        background:linear-gradient(yellow, orange);
+        outline: none;
+        border: none; border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .container  .row .col p{
+        width: 100%;
+        height: 50px;
+        color: rgb(22, 22, 22);
+        outline: none;
+        border: none; border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 600px){
+            .container .content .row{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-wrap: wrap;
+            margin: 10px;
+            /* width: 100%; */
+            text-align: center;
+        }
+        .container .content .row .col{
+            margin: 2px;
+        }
+        .head{
+            font-size: 30px;
+            color: #faa916;
+            padding: 10px;
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <div class="head">
+                        5th Semester SGPA
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21CS51</label>
+                    <input type="number" class="box" id="atc" placeholder="ATC" class="box">
+
+                </div>
+                <div class="col">
+                    <label for="sem">21CS52</label>
+                    <input type="number" class="box" id="cn" placeholder="CN" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21CS53</label>
+                    <input type="number" class="box" id="dbms" placeholder="DBMS" class="box">
+                </div>
+                <div class="col">
+                    <label for="sem">21AI54</label>
+                    <input type="number" class="box" id="pai" placeholder="PAI" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21RMI56</label>
+                    <input type="number" class="box" id="rmi" placeholder="RMI" class="box">
+                </div>
+                <div class="col">
+                    <label for="sem">21CIV57</label>
+                    <input type="number" class="box" id="evs" placeholder="EVS" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="sem">21CSL55</label>
+                    <input type="number" class="box" id="dbmsl" placeholder="DBMS lab" class="box">
+                </div>
+                <div class="col">
+                    <label for="sem">21CSL581</label>
+                    <input type="number" class="box" id="ajs" placeholder="AJS" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col">
+                    <label for="sem">21CSL46</label>
+                    <input type="number" class="box" id="python" placeholder="python" class="box">
+                </div> -->
+                <div class="col">
+                    <label for="sem">21INT59</label>
+                    <input type="number" class="box" id="intern" placeholder="Internship" class="box">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="btn">
+                        <button type="submit" onclick="fifthsem()">Calculate</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./sgpa.js"></script>
+</body>
+</html>
