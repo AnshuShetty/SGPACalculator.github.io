@@ -70,7 +70,7 @@ function fifthsem(){
     const dbmsl = document.querySelector('#dbmsl').value;
     const ajs = document.querySelector('#ajs').value;
     // const python = document.querySelector('#python').value;
-    const internship = document.querySelector('#intern').value;
+    // const internship = document.querySelector('#intern').value;
 
     const atc_cr = 3;
     const cn_cr = 4;
@@ -81,8 +81,9 @@ function fifthsem(){
     const dbmsl_cr = 1;
     const ajs_cr = 1;
     // const py_cr = 1;
-    const inter_cr = 2;
-    total_cr = ((atc_cr)+(cn_cr)+(dbms_cr)+(pai_cr)+(rmi_cr)+(evs_cr)+(dbmsl_cr)+(ajs_cr)+(inter_cr));
+    // const inter_cr = 2;
+    total_cr = ((atc_cr)+(cn_cr)+(dbms_cr)+(pai_cr)+(rmi_cr)+(evs_cr)+(dbmsl_cr)+(ajs_cr));
+    console.log(total_cr);
 
     const atccr = cr(atc);
     const cncr = cr(cn);
@@ -93,9 +94,10 @@ function fifthsem(){
     const dbmslcr = cr(dbmsl);
     const ajscr = cr(ajs);
     // const pycr = cr(python);
-    const Intercr = cr(internship);
+    // const Intercr = cr(internship);
     // console.log(matcr,pycr, daacr);
-    total = ((atccr*3)+(cncr*4)+(dbmscr*3)+(paicr*3)+(rmicr*2)+(evscr*1)+(dbmslcr*1)+(ajscr*1)+(Intercr*2));
+    total = ((atccr*3)+(cncr*4)+(dbmscr*3)+(paicr*3)+(rmicr*2)+(evscr*1)+(dbmslcr*1)+(ajscr*1));
+     console.log(total);
     var sgpa = total/total_cr;
     alert("SGPA: "+sgpa.toFixed(2));
     const answer = document.querySelector('#result');
