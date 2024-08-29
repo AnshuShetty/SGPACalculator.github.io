@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA</title>
+    <link rel="shortcut icon" href="Vector 52.png">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh; /* Changed max-height to height to ensure the body takes up the full viewport height */
+    background-color: #141517; /* Used a hex code for the color instead of rgb */
+    color: #fff; /* Used a hex code for the color instead of a color name */
+    margin: 0; /* Added margin: 0 to remove any default margins */
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  header .nav {
+    max-width: 100%;
+    padding: 10px;
+    margin: 2px;
+    background-color: #1e1f22; /* Used a hex code for the color instead of rgb */
+  }
+  .nav h2{
+    color: yellow;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  }
+  form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style the labels and inputs */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: yellow;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  /* Style the submit button */
+  button[type="submit"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: yellow;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  .cgpadisp{
+    display: none;
+    background-color: yellow;
+    color: black;
+    padding: 10px; margin: 0 auto;
+    text-align: center;
+    max-width: 50%;
+    border-radius: 5px;
+  }
+
+  canvas{
+    margin: 5px;
+    padding: 10px;
+    color: white;
+  }
+
+  footer{
+    padding: 10px;
+  }
+  footer p{
+    color: grey;
+    text-align: center;
+  }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h2>CGPA CALCULATOR</h2>
+        </nav>
+    </header>
+    <div class="container">
+        <form>
+            <label for="sem1">Semester 1:</label>
+            <input type="number" class="sem" id="sem1" name="sem1" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem2">Semester 2:</label>
+            <input type="number" class="sem" id="sem2" name="sem2" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem3">Semester 3:</label>
+            <input type="number" class="sem" id="sem3" name="sem3" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem4">Semester 4:</label>
+            <input type="number" class="sem" id="sem4" name="sem4" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem5">Semester 5:</label>
+            <input type="number" class="sem" id="sem5" name="sem5" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem6">Semester 6:</label>
+            <input type="number" class="sem" id="sem6" name="sem6" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem7">Semester 7:</label>
+            <input type="number" class="sem" id="sem7" name="sem7" step="0.1" min="0" max="10"><br><br>
+
+            <label for="sem8">Semester 8:</label>
+            <input type="number" class="sem" id="sem8" name="sem8" step="0.1" min="0" max="10">
+
+
+            <button type="submit" onclick="calculateVtuCgpa()">Calculate</button>
+          </form>
+          <div class="cgpadisp">
+            
+          </div>
+          <canvas id="semesterChart" width="400" height="200"></canvas>
+    </div>
+    <footer>
+        <p>Contact: 8217406323 Email: anshushetty2003@gmail.com</p>
+    </footer>
+    <script src="./Allsgpa_cgpa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

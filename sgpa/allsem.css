@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh; /* Changed max-height to height to ensure the body takes up the full viewport height */
+    background-color: #141517; /* Used a hex code for the color instead of rgb */
+    color: #fff; /* Used a hex code for the color instead of a color name */
+    margin: 0; /* Added margin: 0 to remove any default margins */
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 10px;
+    margin: 2px;
+    background-color: #1e1f22; /* Used a hex code for the color instead of rgb */
+  }
+  /* .nav .nav-ele{
+    display: flex;
+    min-width: 20%;
+    justify-content: space-between;
+    margin: 5px 4px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .nav-ele p{
+    padding: 5px;
+    color: rgb(219, 219, 56);
+  }
+  .nav .nav-ele :hover{
+    background-color: #333300;
+    border-radius: 5px;
+  } */
+  .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links  :hover{
+    background-color: #f0f005;
+    color: black;
+    border-radius: 5px;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+  .nav h2{
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 50px auto;
+  }
+
+  .content .row{
+    padding: 5px;
+  }
+  .row input{
+    gap: 10px;
+    margin: 7px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .btn-row {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  
+  .btn-row button {
+    padding: 10px;
+    margin: 0 10px; /* add margin to create gap */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 5px;
+  }
+  .btn-row p{
+    padding: 10px;
+    margin: 0 10px; /* add margin to create gap */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 5px;
+    display: none;
+  }
+  footer{
+    padding: 10px;
+  }
+  footer p{
+    color: grey;
+    text-align: center;
+  }
+
+
+/* contact infi css */
+#contact-form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e1f22;
+    padding: 20px;
+    min-width: 50%;
+    border: 1px solid #e9e500;
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  .contact{
+    border-radius: 5px;
+    border: none;outline: none;
+  }
+
+  .contact, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  #send-btn {
+    background-color: yellow;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #send-btn:hover {
+    background-color: #b3d300;
+  }

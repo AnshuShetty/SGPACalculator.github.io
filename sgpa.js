@@ -14,7 +14,8 @@ function validatesem(){
         window.location.href = "sgpa/5thsem.html";
     }
     else{
-        alert("This is only for 3rd 4th and 5th sem!");
+        // alert("This is only for 3rd 4th and 5th sem!");
+        window.location.href = "sgpa/AllSem.html";
     }
 }
 function sgpacalc(){
