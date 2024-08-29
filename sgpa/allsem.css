@@ -213,3 +213,26 @@
   #send-btn:hover {
     background-color: #b3d300;
   }
+
+  @media (max-width: 484px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 5px;
+        margin: 50px auto;
+      }
+    
+    .row input{
+        gap: 5px;
+        margin: 5px;
+        padding: 5px;
+        background-color: transparent;
+        border: 1px solid yellow;
+        border-radius: 5px;
+        color: white;
+        max-width: 35%;
+      }
+  }
